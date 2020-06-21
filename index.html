@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Calculator Application - MBS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Calculator Application</h1>
+    <br><br>
+    <div>
+        <form action="get">
+            <input id="field" class="text" type="text" autofocus>
+        </form>
+        <table>
+            <tr>
+                <td colspan="2"><input id="clear" class="extendedClear" type="button" value="AC" onclick="clearAll()"></td>
+                <td><input id="clear" class="button" type="button" value="C" onclick="clearToZero()"></td>
+                <td><input id="btn" class="buttonSign" type="button" value="/" onclick="show('/')"></td>
+            </tr>
+
+            <tr>
+                <td><input id="btn" class="button" type="button" value="7" onclick="show('7')"></td>
+                <td><input id="btn" class="button" type="button" value="8" onclick="show('8')"></td>
+                <td><input id="btn" class="button" type="button" value="9" onclick="show('9')"></td>
+                <td><input id="btn" class="buttonSign" type="button" value="*" onclick="show('*')"></td>
+            </tr>
+
+            <tr>
+                <td><input id="btn" class="button" type="button" value="4" onclick="show('4')"></td>
+                <td><input id="btn" class="button" type="button" value="5" onclick="show('5')"></td>
+                <td><input id="btn" class="button" type="button" value="6" onclick="show('6')"></td>
+                <td><input id="btn" class="buttonSign" type="button" value="-" onclick="show('-')"></td>
+            </tr>
+
+            <tr>
+                <td><input id="btn" class="button" type="button" value="1" onclick="show('1')"></td>
+                <td><input id="btn" class="button" type="button" value="2" onclick="show('2')"></td>
+                <td><input id="btn" class="button" type="button" value="3" onclick="show('3')"></td>
+                <td><input id="btn" class="buttonSign" type="button" value="+" onclick="show('+')"></td>
+            </tr>
+
+            <tr>
+                <td><input id="btn" class="button" type="button" value="0" onclick="show(0)"></td>
+                <td><input id="btn" class="button" type="button" value="." onclick="show('.')"></td>
+                <td colspan="2"><input id="result" class="extendedEqual" type="button" value="=" onclick="solve()"></td>
+                <td></td>
+            </tr>
+
+        </table>
+    </div>
+</body>
+<!-- javascript -->
+<script src="app.js"></script>
+
+</html>
