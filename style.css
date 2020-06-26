@@ -1,10 +1,11 @@
+/* additional font faces */
 @font-face{
     font-family: body;
-    src: url(../Fonts/ProductSans-Regular.ttf);
+    src: url(Fonts/ProductSans-Regular.ttf);
 }
 @font-face{
     font-family: head;
-    src: url(../Fonts/ProductSans-Bold.ttf);
+    src: url(Fonts/ProductSans-Bold.ttf);
 }
 
 
@@ -21,6 +22,8 @@ h1{
     font-size: 32;
     padding-top: 20px;
 }
+
+/* main body styling */
 div{
     padding-top: 20px;
     padding-left: 20px;
@@ -34,8 +37,10 @@ div{
     max-height: max-content;
     margin: auto;
     align-content: center;
+    background-color: lightgrey;
 }
 
+/* buttons styling */
 .button, .buttonSign{
     font-family: body;
     font-size: 20px;
@@ -104,4 +109,12 @@ div{
 .button:active, .extendedClear:active, .extendedEqual:active{
     box-shadow: 0 5px #666;
     transform: translateY(4px);
+}
+
+/* credits styling */
+.credits{
+    color: lightgray;
+    text-align: center;
+    border: solid 2px black;
+    background-color: lime;
 }

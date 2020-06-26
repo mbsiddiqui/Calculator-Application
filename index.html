@@ -10,11 +10,15 @@
 </head>
 
 <body>
+
+    <!-- application title -->
     <h1>Calculator Application</h1>
     <br><br>
-    <div>
+
+    <!-- calculator -->
+    <div class = "mainBody">
         <form>
-            <input id="field" class="text" type="text" autofocus>
+            <input id="field" class="text" type="text" onfocus="this.style.backgroundColor = 'whitesmoke'" onblur="this.style.backgroundColor = 'white'">
         </form>
         <table>
             <tr>
@@ -53,7 +57,12 @@
 
         </table>
     </div>
+
+    <!-- credits for application developer -->
+    <br><br>
+    <h2 class="credits">Designed By: Muhammad Bilal Siddiqui <br> (Web and Mobile Hybrid Application Development Program - SMIT)</h2>
 </body>
+
 <!-- javascript -->
 <script src="app.js"></script>
 
